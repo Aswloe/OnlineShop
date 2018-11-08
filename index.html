@@ -1,0 +1,312 @@
+/*Author: N0n0_liv3*/
+<html>
+<head> 
+<title>Hacked by N0n0_liv3</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSzHze8bLnd7XVSijhW5G5xEKQtXOdEYuDHLatDmBpAzw9e_6-H" sizes="16x16">
+<meta name="title" content="Hacked By N0n0_liv3">
+<meta name="description" content="Are You Sad?!?!?!?">
+<meta name="language" content="Indonesia">
+<link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+</head>
+<body> 
+<style>
+body
+{
+background:black;
+}
+.basic
+{
+color:white;
+font-family:'Iceland';
+font-size:28px;
+text-align:center;
+}
+.slidet 
+{
+height: 50px;
+border: 3px solid #db3434;
+border-radius: 6px;
+padding: 10px;
+width: 97%;
+}
+.slidet b
+{
+font-family:'Iceland';
+float: right;
+color: #fff;
+font-size:25px;
+padding: 10px; 
+}
+.slidet1 {
+font-family:'Iceland';
+font-size: 25px;
+border-radius: 6px;
+bottom: 0;
+height: 30px;
+color:white;
+border: 3px solid white;
+padding: 7px;
+width: 80%;
+}
+@media screen and (min-width: 500px) {
+    .Slidet1 { 
+      width: 80%; 
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .Slidet1 { 
+      width: 70%; 
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .Slidet1 { 
+      width: 60%; 
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .Slidet1 { 
+      width: 50%; 
+    }
+  }
+.middle
+{
+text-align: center;
+width: 100%;
+}
+.btn
+{
+display: inline-block;
+margin 10px 30px;
+font-size: 20px;
+padding: 20px 20px;
+color: #fff;
+border: 1px solid #fff;
+border-radius: 50%;
+}
+.btn:hover
+{
+color: #db3434;
+border: 1px solid #db3434;
+transition: .5s;
+}
+.inub
+{
+color:transparent;
+text-transform:uppercase;
+background-image:linear-gradient(to right, #f00, #ff0, #0ff, #0f0, #00f);
+-webkit-background-clip:text;
+animation:animate 30s linear infinite;
+background-size:1000%;
+}
+.inub2
+{
+color:transparent;
+text-transform:uppercase;
+background-image:linear-gradient(to right, #f00, #fff);
+-webkit-background-clip:text;
+animation:animate .5s linear infinite;
+background-size:1000%;
+}
+@keyframes animate
+{
+0%
+{
+background-position:0% 100%;
+}
+50%
+{
+background-position:100% 0%;
+}
+100%
+{
+background-position:0% 100%;
+}
+}
+</style>
+
+<div class="basic">
+<h1 class="inub2" style="margin:0; font-size:200px; line-height:250px; font-weight:bold;">!</h1>
+<h2 class="inub" style="margin-top:5px;font-size:55px;">Touched By N0n0_liv3</h2>
+<p>
+Touched Since: <span class="timeago" title="Monday, 7 Nov 2018 16:42:18 (Waktu Standar Timur)"></span> | Your Time: <span id="clockbox"></span>
+</p>
+<p>Helper:</p>
+<p>-=[ZTzEmpty, H4ck3rN0l3p]=-</p>
+<p>Never Attack Us, Because We Will Attack Back Quickly</p>
+<b>Cotact me:</b> </p>
+<div class="middle"><a class="btn" href="mailto:autokelar333@gmail.com"> <i class="far fa-envelope"></i> </a></div>
+<iframe width="1" height="1" src="https://s0.vocaroo.com/media/download_temp/Vocaroo_s0uPOX8rZ8HV.mp3" frameborder="0" allowfullscreen=""></iframe>
+<script>
+// By ZTzTopia
+//:::Music:::
+// <iframe width="1" height="1" src="https://pecah.ndas.se/download-mp3/donlot/153825664/3829341" frameborder="0" allowfullscreen=""></iframe>
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+tday[nday]+", "+ndate+" "+tmonth[nmonth]+" "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000); //Update time
+
+//Author: Goker
+// timeAgo Function
+(function timeAgo() {
+
+    var templates = {
+        prefix: "",
+        suffix: " ago",
+        seconds: "%d seconds",
+        minute: "About a minute",
+        minutes: "%d minutes",
+        hour: "About an hour",
+        hours: "About %d hours",
+        day: "A day",
+        days: "%d days",
+        month: "About a month",
+        months: "%d months",
+        year: "About a year",
+        years: "%d years"
+    };
+    var template = function (t, n) {
+        return templates[t] && templates[t].replace(/%d/i, Math.abs(Math.round(n)));
+    };
+
+    var timer = function (time) {
+        if (!time) return;
+        time = time.replace(/\.\d+/, ""); // remove milliseconds
+        time = time.replace(/-/, "/").replace(/-/, "/");
+        time = time.replace(/T/, " ").replace(/Z/, " WIB");
+        time = time.replace(/([\+\-]\d\d)\:?(\d\d)/, " $1$2"); // -04:00 -> -0400
+        time = new Date(time * 1000 || time);
+
+        var now = new Date();
+        var seconds = ((now.getTime() - time) * .001) >> 0;
+        var minutes = seconds / 60;
+        var hours = minutes / 60;
+        var days = hours / 24;
+        var years = days / 365;
+
+return templates.prefix + (
+seconds < 45 && template('seconds', seconds) || 
+seconds < 90 && template('minute', 1) || 
+minutes < 45 && template('minutes', minutes) || 
+minutes < 90 && template('hour', 1) || 
+hours < 24 && template('hours', hours) || 
+hours < 42 && template('day', 1) || 
+days < 30 && template('days', days) || 
+days < 45 && template('month', 1) ||
+days < 365 && template('months', days / 30) || 
+years < 1.5 && template('year', 1) || 
+template('years', years)) + templates.suffix;       
+};
+
+    var elements = document.getElementsByClassName('timeago');
+    for (var i in elements) {
+        var $this = elements[i];
+        if (typeof $this === 'object') {
+            $this.innerHTML = timer($this.getAttribute('title') || $this.getAttribute('datetime'));
+        }
+    }
+    // update time every minute
+    setTimeout(timeAgo,1000);
+    return true;
+
+})();
+
+//Animation title Author: W3LL (Maybe)
+function tb5_makeArray(n){
+ this.length = n;
+ return this.length;
+}
+ 
+tb5_messages = new tb5_makeArray(8);
+tb5_messages[0] = "Hacked By N0n0_liv3";
+tb5_messages[1] = "FIX THIS BUG!!!";
+tb5_messages[2] = "I Am N0n0_liv3";
+tb5_messages[3] = "Never Attack Us";
+tb5_messages[4] = "Because We Will Attack Back Quickly";
+tb5_messages[5] = "I Get What I Want!";
+tb5_messages[6] = "I Never Give Up!";
+tb5_messages[7] = "I Am Ur King!";
+tb5_rptType = 'infinite';
+tb5_rptNbr = 20;
+tb5_speed = 60;
+tb5_delay = 2000;
+var tb5_counter=2;
+var tb5_currMsg=0;
+var tb5_stsmsg="";
+function tb5_shuffle(arr){
+var k;
+for (i=0; i<arr.length; i++){
+ k = Math.round(Math.random() * (arr.length - i - 1)) + i;
+ temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+}
+return arr;
+}
+tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+}
+tb5_arr = tb5_shuffle(tb5_arr);
+function tb5_init(n){
+var k;
+if (n == tb5_arr.length){
+ if (tb5_currMsg == tb5_messages.length-1){
+ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){
+ clearTimeout(tb5_timerID);
+ return;
+ }
+ tb5_counter++;
+ tb5_currMsg=0;
+ }
+ else{
+ tb5_currMsg++;
+ }
+ n=0;
+ tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+ }
+ tb5_arr = tb5_shuffle(tb5_arr);
+ tb5_sp=tb5_delay;
+}
+else{
+ tb5_sp=tb5_speed;
+ k = tb5_arr[n];
+ tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k);
+ tb5_stsmsg = "";
+ for (var i=0; i<tb5_sts.length; i++)
+ tb5_stsmsg += tb5_sts[i];
+ document.title = tb5_stsmsg;
+ n++;
+ }
+ tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+}
+function tb5_randomizetitle(){
+ tb5_init(0);
+}
+tb5_randomizetitle();
+ 
+</script>
+</body>
+</html>
